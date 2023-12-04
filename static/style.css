@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #00bcd4, #03a9f4, #3f51b5, #9c27b0, #e91e63, #f44336, #ff5722);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s infinite;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: flex;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+input {
+    padding: 12px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 2px solid #009688; /* Teal border for input fields */
+    border-radius: 8px;
+    outline: none; /* Remove default focus outline */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+
+    /* Additional styles for better readability */
+    font-size: 16px;
+    color: #333;
+}
+
+/* Updated input focus style */
+input:focus {
+    border-color: #00796b; /* Darker teal border on focus */
+}
+button {
+    padding: 10px 20px;
+    background-color: #DA70D6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #9932CC;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+h2 {
+    color: #000;
+    margin-bottom: 20px;
+    align-self: flex-start;
+    position: relative;
+    font-size: xxx-large;
+    left: 375px;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 16px;
+    color: #fff;
+
+}
+
+/* Optional: Add some spacing between paragraphs */
+p + p {
+    margin-top: 15px;
+}
