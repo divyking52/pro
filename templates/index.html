@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Vision</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Food Vision</h1>
+        <form action="/process_video" method="post">
+            <label for="url">Enter the link of your YT video:</label>
+            <input type="text" name="url" id="url" required>
+            <button type="submit">Generate</button>
+        </form>
+    </div>
+</body>
+</html>
