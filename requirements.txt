@@ -6,4 +6,4 @@ transformers
 gunicorn
 pytube
 flask
-pytorch
+torch
