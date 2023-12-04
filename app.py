@@ -89,7 +89,6 @@ def generate_recipe_with_gpt2(prompt, model, tokenizer):
     recipe = tokenizer.decode(output[0], skip_special_tokens=True)
     return recipe
 
-if __name__ == '__main__':
-    app.run(debug=False, host='0.0.0.0')
+
 
 
