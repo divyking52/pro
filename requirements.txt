@@ -4,3 +4,4 @@ whisper
 transformers
 gunicorn
 pytube
+flask
