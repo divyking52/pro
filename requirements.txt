@@ -1,0 +1,6 @@
+python-dotenv
+openai
+whisper
+transformers
+
+pytube
