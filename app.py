@@ -31,8 +31,8 @@ def process_video():
 
     try:
         video_title, audio_filename, video_filename = save_audio(url)
-        transcript_result = audio_to_transcription(audio_filename)
-        recipe_result = generate_recipe_with_gpt2(transcript_result, gpt2_model, gpt2_tokenizer)
+        
+        recipe_result = generate_recipe_with_gpt2(video_title, gpt2_model, gpt2_tokenizer)
 
         video_url = f'/static/videos/{Path(video_filename).name}'
 
@@ -65,11 +65,7 @@ def save_audio(url):
     print(yt.title+ 'has been successfully downloaded')
     return yt.title, audio_filename, video_filename
 
-def audio_to_transcription(audio_file):
-    model = load_model()
-    result= model.transcribe(audio_file)
-    transcript = result['text']
-    return transcript
+
 
 def load_gpt2_model():
     model_name = "gpt2"
